@@ -1,0 +1,22 @@
+###
+POST http://localhost:11434/api/generate
+
+{
+  "model": "MHKetbi/Unsloth_gemma3-4b-it:q2_K_L",
+  "prompt": "Why is the sky blue?"
+}
+
+###
+# @timeout 600
+POST http://localhost:11434/api/chat
+
+{
+  "model": "MHKetbi/Unsloth_gemma3-4b-it:q2_K_L",
+  "messages": [
+    {
+      "role": "user",
+      "content": "네가 잘하는 것은 뭐야?"
+    }
+  ],
+  "stream": false
+}
