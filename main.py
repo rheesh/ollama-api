@@ -136,10 +136,10 @@ if __name__ == '__main__':
     # 6. 추가 매개변수를 사용한 예제
     print("\n" + "=" * 60)
     client.generate_completion(
-        "짧은 동화를 하나 써줘.",
+        "너를 소개해줘.",
         stream=False,
         options={
-            "num_ctx": 20480,
+            "num_ctx": 30720,
             "temperature": 0.8,  # 창의성 증가
             "num_predict": -1,  # 토큰 수 제한, max_tokens
         }
